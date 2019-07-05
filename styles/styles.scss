@@ -70,11 +70,13 @@
           display: flex;
           flex-wrap: wrap;
           justify-content: center;
+          .image-item-wrapper {
+              min-width: 30%;
+          }
           .image-item {
             margin: 5px;
             width: 100px;
             height: 100px;
-            min-width: 25%;
             cursor: pointer;
             border-radius: 5px;
             background-size: contain;
@@ -169,6 +171,15 @@
       .image-slider .view-finder .images .image-item {
         width: 70px;
         height: 70px;
+      }
+      .img-popup {
+          &-container-img {
+            width: 90%;
+          }
+          &-close-btn {
+            top: 8px;
+            right: 20px;
+          }
       }
     }
   }

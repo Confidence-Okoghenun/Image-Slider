@@ -21,11 +21,11 @@ setBackgroundImage(0);
 
 productPhotoArr.forEach(function(img, i) {
   if (i == 0) {
-    imgContainer.innerHTML += `<div style="
-    background-image: url(${img});" alt="" class="active image-item" data-index="${i}"></div>`;
+    imgContainer.innerHTML += `<div class="image-item-wrapper"><div style="
+    background-image: url(${img});" alt="" class="active image-item" data-index="${i}"></div></div>`;
   } else {
-    imgContainer.innerHTML += `<div style="
-    background-image: url(${img});" alt="" class="image-item" data-index="${i}"></div>`;
+    imgContainer.innerHTML += `<div class="image-item-wrapper"><div style="
+    background-image: url(${img});" alt="" class="image-item" data-index="${i}"></div></div>`;
   }
 });
 
