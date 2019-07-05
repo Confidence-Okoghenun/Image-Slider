@@ -63,9 +63,9 @@
         }
       }
       .view-finder {
-          margin-top: 20px;
-          padding-top: 20px;
-          border-top: 2px solid #cdd6d7;
+        margin-top: 20px;
+        padding-top: 20px;
+        border-top: 2px solid #cdd6d7;
         .images {
           display: flex;
           flex-wrap: wrap;
@@ -74,6 +74,7 @@
             margin: 5px;
             width: 100px;
             height: 100px;
+            min-width: 25%;
             cursor: pointer;
             border-radius: 5px;
             background-size: contain;
@@ -160,10 +161,15 @@
 
   @media (max-width: 600px) {
     width: 100%;
+    margin-top: 20px;
     flex-direction: column;
     .main-content {
-      width: 100%;
-      order: 2;
+      width: 95%;
+      margin: 0 auto;
+      .image-slider .view-finder .images .image-item {
+        width: 70px;
+        height: 70px;
+      }
     }
   }
   .hide {
