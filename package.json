@@ -3,7 +3,7 @@
     "sass": "^1.22.3"
   },
   "scripts": {
-    "sass": "sass --watch --style=compressed styles.scss:styles.css"
+    "sass": "sass --watch --style=compressed styles/styles.scss:styles/styles.css"
   },
   "name": "image_slider",
   "version": "1.0.0",
