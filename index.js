@@ -3,7 +3,8 @@ let productPhotoArr = [
   "img/product2.jpg",
   "img/product3.jpg",
   "img/product4.jpg",
-  "img/product5.jpg"
+  "img/product5.jpg",
+  "img/product6.jpg"
 ];
 let imgContainer = document.querySelector(".view-finder .images");
 imgContainer.innerHTML = "";
