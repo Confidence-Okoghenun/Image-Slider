@@ -173,8 +173,11 @@
         height: 70px;
       }
       .img-popup {
-          &-container-img {
-            width: 90%;
+          &-container {
+            margin-top: -70px;
+            &-img {
+              width: 90%;
+            }
           }
           &-close-btn {
             top: 8px;
