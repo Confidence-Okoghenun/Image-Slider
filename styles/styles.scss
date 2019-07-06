@@ -93,16 +93,15 @@
       }
     }
     .img-popup {
-      display: block;
-      position: fixed;
-      z-index: 4;
-      padding-top: 100px;
-      left: 0;
       top: 0;
+      left: 0;
+      z-index: 4;
       width: 100%;
       height: 100%;
       overflow: auto;
-      background-color: rgb(0, 0, 0);
+      display: block;
+      position: fixed;
+      padding-top: 100px;
       background-color: rgba(0, 0, 0, 0.9);
 
       &-close-btn {
@@ -110,32 +109,28 @@
         right: 35px;
         font-size: 40px;
         cursor: pointer;
-        color: #f1f1f1;
         transition: 0.3s;
+        color: #f1f1f1;
         font-weight: bold;
         position: absolute;
         &:hover,
         &:focus {
           color: #bbb;
-          text-decoration: none;
           cursor: pointer;
+          text-decoration: none;
         }
       }
       &-container {
         &-img {
-          background: url(../img/product1.jpg);
           width: 80%;
           margin: auto;
           height: 80vh;
           max-width: 700px;
+          animation-name: zoom;
+          animation-duration: 0.6s;
           background-size: contain;
           background-position: center;
           background-repeat: no-repeat;
-
-          -webkit-animation-name: zoom;
-          -webkit-animation-duration: 0.6s;
-          animation-name: zoom;
-          animation-duration: 0.6s;
         }
         @-webkit-keyframes zoom {
           from {
